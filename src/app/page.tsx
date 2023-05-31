@@ -124,7 +124,7 @@ export default function Home() {
           </form>
         </div>
 
-        {total && total > -1 && (
+        {users.length > 0 && total && total > 0 && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: loading ? 0 : 1 }}
